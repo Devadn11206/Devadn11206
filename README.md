@@ -22,8 +22,7 @@
 
 <h2 align="center">Analytics & Activity</h2>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Devadn11206&theme=radical&show_icons=true&hide_border=true&bg_color=050816&title_color=7C3AED&text_color=94A3B8&icon_color=38BDF8" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Devadn11206&theme=radical&hide_border=true&background=050816&ring=7C3AED&fire=38BDF8&currStreakLabel=94A3B8" width="49%" />
+  <img src="assets/premium_github.svg" width="100%" alt="GitHub Analytics" />
 </div>
 
 <div align="center">

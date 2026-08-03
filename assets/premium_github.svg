@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      * { box-sizing: border-box; }
+      .font-display { font-family: 'Space Grotesk', sans-serif; }
+      .glass-card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .h2 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; fill: #F8FAFC; }
+      .h3 { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #F8FAFC; }
+      .p { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; fill: #CBD5E1; }
+      .p-mut { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; fill: #94A3B8; }
+      .mono-sm { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #22D3EE; letter-spacing: 1px; }
+      .stat-num { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; fill: #F8FAFC; }
+      .lang-dot { rx: 4px; ry: 4px; }
+    </style>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(124, 58, 237, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#050816"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <text x="40" y="60" class="mono-sm">04 // OPEN SOURCE</text>
+  <text x="40" y="105" class="h2">GitHub Analytics &amp; Activity</text>
+  
+  <rect x="40" y="140" width="450" height="200" class="glass-card"/>
+  <g transform="translate(80, 180)">
+    <text x="0" y="0" class="h3">Contributions</text>
+    <g transform="translate(0, 45)">
+      <text x="0" y="0" class="stat-num">40+</text>
+      <text x="0" y="25" class="p-mut">Repositories</text>
+    </g>
+    <g transform="translate(130, 45)">
+      <text x="0" y="0" class="stat-num">120+</text>
+      <text x="0" y="25" class="p-mut">Contributions/yr</text>
+    </g>
+    <g transform="translate(290, 45)">
+      <text x="0" y="0" class="stat-num">6</text>
+      <text x="0" y="25" class="p-mut">Day Streak</text>
+    </g>
+    
+    <g transform="translate(0, 110)">
+      <rect x="0" y="0" width="220" height="8" rx="4" fill="#7C3AED"/>
+      <rect x="222" y="0" width="80" height="8" fill="#2563EB"/>
+      <rect x="304" y="0" width="45" height="8" fill="#22D3EE"/>
+      <rect x="351" y="0" width="20" height="8" rx="4" fill="#94A3B8"/>
+      
+      <text x="0" y="30" class="p-mut" font-size="11" fill="#CBD5E1"><tspan fill="#7C3AED">●</tspan> Python 62%</text>
+      <text x="90" y="30" class="p-mut" font-size="11" fill="#CBD5E1"><tspan fill="#2563EB">●</tspan> TypeScript 18%</text>
+      <text x="195" y="30" class="p-mut" font-size="11" fill="#CBD5E1"><tspan fill="#22D3EE">●</tspan> Dockerfile 11%</text>
+      <text x="295" y="30" class="p-mut" font-size="11" fill="#CBD5E1"><tspan fill="#94A3B8">●</tspan> Other 9%</text>
+    </g>
+  </g>
+
+  <rect x="510" y="140" width="450" height="200" class="glass-card"/>
+  <g transform="translate(540, 180)">
+    <text x="0" y="0" class="h3">Pinned Projects</text>
+    
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="390" height="40" fill="transparent"/>
+      <text x="0" y="15" class="mono-sm" fill="#F8FAFC">benefits-bureaucracy-navigator</text>
+      <text x="390" y="15" class="mono-sm" fill="#94A3B8" text-anchor="end">Python</text>
+      <text x="0" y="35" class="p-mut">Agentic platform for public services &amp; documentation.</text>
+      <rect x="0" y="45" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+    </g>
+    <g transform="translate(0, 85)">
+      <rect x="0" y="0" width="390" height="40" fill="transparent"/>
+      <text x="0" y="15" class="mono-sm" fill="#F8FAFC">dreamscape-ai</text>
+      <text x="390" y="15" class="mono-sm" fill="#94A3B8" text-anchor="end">Python</text>
+      <text x="0" y="35" class="p-mut">Cinematic AI storytelling pipeline.</text>
+      <rect x="0" y="45" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+    </g>
+    <g transform="translate(0, 140)">
+      <rect x="0" y="0" width="390" height="40" fill="transparent"/>
+      <text x="0" y="15" class="mono-sm" fill="#F8FAFC">researchmind-ai</text>
+      <text x="390" y="15" class="mono-sm" fill="#94A3B8" text-anchor="end">Python</text>
+      <text x="0" y="35" class="p-mut">RAG-powered research assistant.</text>
+    </g>
+  </g>
+</svg>
