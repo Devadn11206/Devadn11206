@@ -3,6 +3,12 @@
 </div>
 
 <div align="center">
+  <a href="https://devadn11206.github.io/Devadn11206/">
+    <img src="assets/interactive_btn.svg" width="100%" alt="View Interactive Portfolio" />
+  </a>
+</div>
+
+<div align="center">
   <img src="assets/about.svg" width="100%" alt="About Me" />
 </div>
 
@@ -26,7 +32,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/research.svg" width="100%" alt="Research" />
+  <img src="assets/exp_edu.svg" width="100%" alt="Experience and Education" />
 </div>
 
 <div align="center">
