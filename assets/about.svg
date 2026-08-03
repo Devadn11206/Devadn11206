@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap');
+      * { font-family: 'Inter', -apple-system, sans-serif; }
+      .bg { fill: #050816; }
+      .card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .text-title { font-size: 32px; font-weight: 800; fill: #F8FAFC; }
+      .text-h2 { font-size: 24px; font-weight: 700; fill: #F8FAFC; }
+      .text-p { font-size: 15px; font-weight: 400; fill: #94A3B8; }
+      .text-sm { font-size: 13px; font-weight: 400; fill: #94A3B8; }
+      .highlight { fill: #38BDF8; font-weight: 600; }
+      .badge { fill: rgba(56, 189, 248, 0.1); stroke: rgba(56, 189, 248, 0.3); stroke-width: 1px; rx: 6px; }
+      .badge-text { font-size: 12px; font-weight: 600; fill: #38BDF8; }
+    </style>
+  </defs>
+  
+  <rect class="bg" width="100%" height="100%"/>
+  <rect class="card" x="20" y="20" width="760" height="180"/>
+  <text class="text-h2" x="60" y="75">About Me</text>
+  <text class="text-p" x="60" y="115">Architecting intelligent systems at the intersection of <tspan class="highlight">Deep Learning</tspan> and <tspan class="highlight">Software Engineering</tspan>.</text>
+  <text class="text-p" x="60" y="145">Passionate about building scalable AI backends, deploying autonomous agents, and applying</text>
+  <text class="text-p" x="60" y="175">Physics-Informed Neural Networks to real-world complexities.</text>
+
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap');
+      * { font-family: 'Inter', -apple-system, sans-serif; }
+      .bg { fill: #050816; }
+      .card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .text-title { font-size: 32px; font-weight: 800; fill: #F8FAFC; }
+      .text-h2 { font-size: 24px; font-weight: 700; fill: #F8FAFC; }
+      .text-p { font-size: 15px; font-weight: 400; fill: #94A3B8; }
+      .text-sm { font-size: 13px; font-weight: 400; fill: #94A3B8; }
+      .highlight { fill: #38BDF8; font-weight: 600; }
+      .badge { fill: rgba(56, 189, 248, 0.1); stroke: rgba(56, 189, 248, 0.3); stroke-width: 1px; rx: 6px; }
+      .badge-text { font-size: 12px; font-weight: 600; fill: #38BDF8; }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#050816"/>
+  <radialGradient id="g1" cx="20%" cy="20%" r="50%"><stop offset="0%" stop-color="#7C3AED" stop-opacity="0.4"/><stop offset="100%" stop-color="#050816" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2" cx="80%" cy="80%" r="50%"><stop offset="0%" stop-color="#2563EB" stop-opacity="0.4"/><stop offset="100%" stop-color="#050816" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3" cx="50%" cy="50%" r="40%"><stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/><stop offset="100%" stop-color="#050816" stop-opacity="0"/></radialGradient>
+  
+  <style>
+    .typing-container { font-size: 24px; font-weight: 600; fill: #94A3B8; }
+    .word { opacity: 0; animation: cycle 28s infinite; }
+    .w1 { animation-delay: 0s; }
+    .w2 { animation-delay: 4s; }
+    .w3 { animation-delay: 8s; }
+    .w4 { animation-delay: 12s; }
+    .w5 { animation-delay: 16s; }
+    .w6 { animation-delay: 20s; }
+    .w7 { animation-delay: 24s; }
+    @keyframes cycle {
+      0%, 12% { opacity: 1; transform: translateY(0px); filter: blur(0px); }
+      14%, 100% { opacity: 0; transform: translateY(-10px); filter: blur(4px); }
+    }
+    .net-line { stroke: rgba(255,255,255,0.08); stroke-width: 1.5; }
+    .net-node { fill: rgba(56, 189, 248, 0.6); }
+    .float1 { animation: floating1 12s ease-in-out infinite; }
+    .float2 { animation: floating2 15s ease-in-out infinite; }
+    .float3 { animation: floating3 18s ease-in-out infinite; }
+    @keyframes floating1 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-20px, 15px); } }
+    @keyframes floating2 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(25px, -20px); } }
+    @keyframes floating3 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-15px, -25px); } }
+    
+    .beam { fill: url(#beamGrad); opacity: 0.5; animation: sweep 10s linear infinite; }
+    @keyframes sweep {
+      0% { transform: translateX(-100%) skewX(-45deg); }
+      100% { transform: translateX(200%) skewX(-45deg); }
+    }
+  </style>
+
+  <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7C3AED" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+  </linearGradient>
+
+  <g class="float1"><rect width="120%" height="120%" x="-10%" y="-10%" fill="url(#g1)"/></g>
+  <g class="float2"><rect width="120%" height="120%" x="-10%" y="-10%" fill="url(#g2)"/></g>
+  <g class="float3"><rect width="120%" height="120%" x="-10%" y="-10%" fill="url(#g3)"/></g>
+
+  <rect class="beam" width="200" height="800" y="-200"/>
+
+  <g class="float2">
+    <path d="M50 150 L200 80 L350 180 L550 100 L750 200" class="net-line"/>
+    <path d="M100 250 L250 320 L450 240 L650 300 L780 220" class="net-line"/>
+    <path d="M50 150 L100 250" class="net-line"/>
+    <path d="M200 80 L250 320" class="net-line"/>
+    <path d="M350 180 L450 240" class="net-line"/>
+    <path d="M550 100 L650 300" class="net-line"/>
+    <path d="M750 200 L780 220" class="net-line"/>
+    <circle cx="50" cy="150" r="4" class="net-node"/>
+    <circle cx="200" cy="80" r="3" class="net-node"/>
+    <circle cx="350" cy="180" r="5" class="net-node"/>
+    <circle cx="550" cy="100" r="3" class="net-node"/>
+    <circle cx="750" cy="200" r="4" class="net-node"/>
+    <circle cx="100" cy="250" r="3" class="net-node"/>
+    <circle cx="250" cy="320" r="4" class="net-node"/>
+    <circle cx="450" cy="240" r="5" class="net-node"/>
+    <circle cx="650" cy="300" r="3" class="net-node"/>
+    <circle cx="780" cy="220" r="4" class="net-node"/>
+  </g>
+
+  <g fill="#F8FAFC">
+    <circle cx="120" cy="80" r="1.5" class="float1" opacity="0.6"/>
+    <circle cx="680" cy="90" r="2" class="float3" opacity="0.4"/>
+    <circle cx="420" cy="320" r="1" class="float2" opacity="0.8"/>
+    <circle cx="700" cy="310" r="1.5" class="float1" opacity="0.5"/>
+  </g>
+
+  <rect x="150" y="120" width="500" height="160" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1" style="backdrop-filter: blur(10px);"/>
+  
+  <g transform="translate(400, 180)" text-anchor="middle">
+    <text font-size="42" font-weight="800" fill="#F8FAFC" style="letter-spacing: 2px;">DEVADN11206</text>
+    <g class="typing-container" transform="translate(0, 40)">
+      <text class="word w1">AI Engineer</text>
+      <text class="word w2">Machine Learning Researcher</text>
+      <text class="word w3">Physics-Informed Neural Networks</text>
+      <text class="word w4">Autonomous AI Agents</text>
+      <text class="word w5">Deep Learning</text>
+      <text class="word w6">LLM Engineer</text>
+      <text class="word w7">Future MSc Germany 🇩🇪</text>
+    </g>
+  </g>
+
+</svg>

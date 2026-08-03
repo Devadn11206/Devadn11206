@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap');
+      * { font-family: 'Inter', -apple-system, sans-serif; }
+      .bg { fill: #050816; }
+      .card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .text-title { font-size: 32px; font-weight: 800; fill: #F8FAFC; }
+      .text-h2 { font-size: 24px; font-weight: 700; fill: #F8FAFC; }
+      .text-p { font-size: 15px; font-weight: 400; fill: #94A3B8; }
+      .text-sm { font-size: 13px; font-weight: 400; fill: #94A3B8; }
+      .highlight { fill: #38BDF8; font-weight: 600; }
+      .badge { fill: rgba(56, 189, 248, 0.1); stroke: rgba(56, 189, 248, 0.3); stroke-width: 1px; rx: 6px; }
+      .badge-text { font-size: 12px; font-weight: 600; fill: #38BDF8; }
+    </style>
+  </defs>
+  
+  <rect class="bg" width="100%" height="100%"/>
+  <rect class="card" x="20" y="20" width="760" height="320"/>
+  <text class="text-h2" x="50" y="65">System Architecture Philosophy</text>
+  
+  <g transform="translate(100, 130)">
+    <rect x="0" y="20" width="140" height="60" rx="8" fill="rgba(124, 58, 237, 0.15)" stroke="#7C3AED"/>
+    <text x="70" y="55" text-anchor="middle" class="text-sm" font-weight="600" fill="#F8FAFC">Client App</text>
+    
+    <rect x="220" y="20" width="140" height="60" rx="8" fill="rgba(37, 99, 235, 0.15)" stroke="#2563EB"/>
+    <text x="290" y="55" text-anchor="middle" class="text-sm" font-weight="600" fill="#F8FAFC">API Gateway</text>
+    
+    <rect x="440" y="-30" width="140" height="60" rx="8" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8"/>
+    <text x="510" y="5" text-anchor="middle" class="text-sm" font-weight="600" fill="#F8FAFC">AI Agent Services</text>
+
+    <rect x="440" y="70" width="140" height="60" rx="8" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8"/>
+    <text x="510" y="105" text-anchor="middle" class="text-sm" font-weight="600" fill="#F8FAFC">Data Pipelines</text>
+    
+    <style>
+      .arrow-dash { stroke-dasharray: 6; animation: dash 2s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -12; } }
+    </style>
+    
+    <path d="M140 50 L210 50" fill="none" stroke="#94A3B8" stroke-width="2" class="arrow-dash"/>
+    <polygon points="210,46 220,50 210,54" fill="#94A3B8"/>
+    
+    <path d="M360 50 L400 50 L400 0 L430 0" fill="none" stroke="#94A3B8" stroke-width="2" class="arrow-dash"/>
+    <polygon points="430,-4 440,0 430,4" fill="#94A3B8"/>
+
+    <path d="M360 50 L400 50 L400 100 L430 100" fill="none" stroke="#94A3B8" stroke-width="2" class="arrow-dash"/>
+    <polygon points="430,96 440,100 430,104" fill="#94A3B8"/>
+  </g>
+
+</svg>

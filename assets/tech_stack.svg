@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap');
+      * { font-family: 'Inter', -apple-system, sans-serif; }
+      .bg { fill: #050816; }
+      .card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .text-title { font-size: 32px; font-weight: 800; fill: #F8FAFC; }
+      .text-h2 { font-size: 24px; font-weight: 700; fill: #F8FAFC; }
+      .text-p { font-size: 15px; font-weight: 400; fill: #94A3B8; }
+      .text-sm { font-size: 13px; font-weight: 400; fill: #94A3B8; }
+      .highlight { fill: #38BDF8; font-weight: 600; }
+      .badge { fill: rgba(56, 189, 248, 0.1); stroke: rgba(56, 189, 248, 0.3); stroke-width: 1px; rx: 6px; }
+      .badge-text { font-size: 12px; font-weight: 600; fill: #38BDF8; }
+    </style>
+  </defs>
+  
+  <rect class="bg" width="100%" height="100%"/>
+  <rect class="card" x="20" y="20" width="760" height="300"/>
+<text class="text-h2" x="50" y="70" font-size="20">AI & ML</text>
+<rect class="badge" x="220" y="48" width="95" height="32"/>
+<text class="badge-text" x="267.5" y="70" text-anchor="middle">PyTorch</text>
+<rect class="badge" x="325" y="48" width="95" height="32"/>
+<text class="badge-text" x="372.5" y="70" text-anchor="middle">TensorFlow</text>
+<rect class="badge" x="430" y="48" width="95" height="32"/>
+<text class="badge-text" x="477.5" y="70" text-anchor="middle">Scikit-Learn</text>
+<rect class="badge" x="535" y="48" width="95" height="32"/>
+<text class="badge-text" x="582.5" y="70" text-anchor="middle">HuggingFace</text>
+<rect class="badge" x="640" y="48" width="95" height="32"/>
+<text class="badge-text" x="687.5" y="70" text-anchor="middle">LangChain</text>
+<text class="text-h2" x="50" y="155" font-size="20">Backend</text>
+<rect class="badge" x="220" y="133" width="95" height="32"/>
+<text class="badge-text" x="267.5" y="155" text-anchor="middle">Python</text>
+<rect class="badge" x="325" y="133" width="95" height="32"/>
+<text class="badge-text" x="372.5" y="155" text-anchor="middle">FastAPI</text>
+<rect class="badge" x="430" y="133" width="95" height="32"/>
+<text class="badge-text" x="477.5" y="155" text-anchor="middle">Node.js</text>
+<rect class="badge" x="535" y="133" width="95" height="32"/>
+<text class="badge-text" x="582.5" y="155" text-anchor="middle">C++</text>
+<rect class="badge" x="640" y="133" width="95" height="32"/>
+<text class="badge-text" x="687.5" y="155" text-anchor="middle">Go</text>
+<text class="text-h2" x="50" y="240" font-size="20">Data & Cloud</text>
+<rect class="badge" x="220" y="218" width="95" height="32"/>
+<text class="badge-text" x="267.5" y="240" text-anchor="middle">PostgreSQL</text>
+<rect class="badge" x="325" y="218" width="95" height="32"/>
+<text class="badge-text" x="372.5" y="240" text-anchor="middle">MongoDB</text>
+<rect class="badge" x="430" y="218" width="95" height="32"/>
+<text class="badge-text" x="477.5" y="240" text-anchor="middle">Redis</text>
+<rect class="badge" x="535" y="218" width="95" height="32"/>
+<text class="badge-text" x="582.5" y="240" text-anchor="middle">AWS</text>
+<rect class="badge" x="640" y="218" width="95" height="32"/>
+<text class="badge-text" x="687.5" y="240" text-anchor="middle">Docker</text>
+
+</svg>
