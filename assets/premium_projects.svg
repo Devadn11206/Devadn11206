@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1060" width="100%" height="100%">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      * { box-sizing: border-box; }
+      .font-display { font-family: 'Space Grotesk', sans-serif; }
+      .font-body { font-family: 'Inter', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      
+      @keyframes float1 { 0% { transform: translate(0, 0); } 50% { transform: translate(20px, -20px); } 100% { transform: translate(0, 0); } }
+      @keyframes float2 { 0% { transform: translate(0, 0); } 50% { transform: translate(-20px, 20px); } 100% { transform: translate(0, 0); } }
+      @keyframes float3 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(15px, 15px) scale(1.05); } 100% { transform: translate(0, 0) scale(1); } }
+      
+      .aurora-1 { animation: float1 15s ease-in-out infinite; }
+      .aurora-2 { animation: float2 20s ease-in-out infinite; }
+      .aurora-3 { animation: float3 25s ease-in-out infinite; }
+      
+      .glass-card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .pill { fill: rgba(124, 58, 237, 0.1); stroke: rgba(124, 58, 237, 0.3); stroke-width: 1px; rx: 100px; }
+      .pill-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #22D3EE; font-weight: 500; }
+      
+      .h1 { font-family: 'Space Grotesk', sans-serif; font-size: 64px; font-weight: 700; fill: url(#textGrad); letter-spacing: -1px; }
+      .h2 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; fill: #F8FAFC; }
+      .h3 { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #F8FAFC; }
+      .p { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; fill: #CBD5E1; line-height: 1.6; }
+      .p-mut { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400; fill: #94A3B8; }
+      .mono-sm { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #94A3B8; letter-spacing: 1px; }
+      
+      .node { fill: rgba(34, 211, 238, 0.8); }
+      .edge { stroke: rgba(124, 58, 237, 0.2); stroke-width: 1px; }
+    </style>
+    
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(124, 58, 237, 0.05)" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#050816"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- Auroras -->
+  <circle cx="10%" cy="20%" r="400" fill="url(#aurora1)" class="aurora-1" />
+  <circle cx="90%" cy="80%" r="500" fill="url(#aurora2)" class="aurora-2" />
+  <circle cx="50%" cy="50%" r="300" fill="url(#aurora3)" class="aurora-3" />
+
+  
+  <text x="40" y="60" class="mono-sm" fill="#22D3EE">02 // ENGINEERING SHOWCASE</text>
+  <text x="40" y="105" class="h2">Featured Projects</text>
+  
+  <!-- Project 1: BBN -->
+  <rect x="40" y="140" width="920" height="340" class="glass-card"/>
+  <g transform="translate(80, 190)">
+    <rect x="0" y="-15" width="220" height="24" class="pill"/>
+    <text x="110" y="1" class="pill-text" text-anchor="middle">FLAGSHIP — KNOWLEDGE BASE PHASE</text>
+    
+    <text x="0" y="50" class="h2">Benefits &amp; Bureaucracy Navigator</text>
+    <text x="0" y="90" class="p">An enterprise-grade AI platform designed to simplify public services,</text>
+    <text x="0" y="115" class="p">benefits, documentation, and bureaucracy using autonomous AI agents.</text>
+    
+    <text x="0" y="160" class="mono-sm" fill="#7C3AED">TECH STACK</text>
+    <text x="0" y="185" class="p-mut">FastAPI, Python, Async SQLAlchemy, Alembic, Docker, PostgreSQL, Pydantic</text>
+    
+    <text x="0" y="225" class="mono-sm" fill="#7C3AED">ARCHITECTURE</text>
+    <text x="0" y="250" class="p-mut">Repository Pattern • Dependency Injection • Clean Architecture • SOLID</text>
+  </g>
+  <g transform="translate(600, 180)">
+    <text x="0" y="0" class="font-display" font-size="16" font-weight="600" fill="#F8FAFC">Engineering Quality Matrix</text>
+    
+        <text x="0" y="30" class="mono-sm" font-size="10">Architecture</text>
+        <rect x="120" y="22" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="22" width="142.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="30" class="mono-sm" font-size="10" fill="#22D3EE">95/100</text>
+        
+    
+        <text x="0" y="55" class="mono-sm" font-size="10">Scalability</text>
+        <rect x="120" y="47" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="47" width="142.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="55" class="mono-sm" font-size="10" fill="#22D3EE">95/100</text>
+        
+    
+        <text x="0" y="80" class="mono-sm" font-size="10">Maintainability</text>
+        <rect x="120" y="72" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="72" width="142.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="80" class="mono-sm" font-size="10" fill="#22D3EE">95/100</text>
+        
+    
+        <text x="0" y="105" class="mono-sm" font-size="10">Testing</text>
+        <rect x="120" y="97" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="97" width="142.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="105" class="mono-sm" font-size="10" fill="#22D3EE">95/100</text>
+        
+    
+        <text x="0" y="130" class="mono-sm" font-size="10">Documentation</text>
+        <rect x="120" y="122" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="122" width="150.0" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="130" class="mono-sm" font-size="10" fill="#22D3EE">100/100</text>
+        
+    
+        <text x="0" y="155" class="mono-sm" font-size="10">AI Readiness</text>
+        <rect x="120" y="147" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="147" width="142.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="155" class="mono-sm" font-size="10" fill="#22D3EE">95/100</text>
+        
+    
+        <text x="0" y="180" class="mono-sm" font-size="10">Production</text>
+        <rect x="120" y="172" width="150" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="120" y="172" width="127.5" height="4" rx="2" fill="url(#primaryGrad)"/>
+        <text x="285" y="180" class="mono-sm" font-size="10" fill="#22D3EE">85/100</text>
+        
+  </g>
+
+  <!-- Project 2 & 3: Side by side -->
+  <rect x="40" y="510" width="450" height="280" class="glass-card"/>
+  <g transform="translate(70, 560)">
+    <text x="0" y="0" class="mono-sm" fill="#22D3EE">GENERATIVE AI</text>
+    <text x="0" y="35" class="h3">DreamScape AI</text>
+    <text x="0" y="65" class="p" font-size="14">Cinematic AI storytelling platform generating</text>
+    <text x="0" y="85" class="p" font-size="14">narratives, images, and text-to-speech.</text>
+    <rect x="0" y="110" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+    <text x="0" y="140" class="mono-sm">STACK</text>
+    <text x="0" y="165" class="p-mut" font-size="13">FastAPI, Gemini, Celery, Redis, Supabase, Docker</text>
+    <text x="0" y="200" class="mono-sm">ORCHESTRATION</text>
+    <text x="0" y="225" class="p-mut" font-size="13">Async Task Queues for long-running generation</text>
+  </g>
+
+  <rect x="510" y="510" width="450" height="280" class="glass-card"/>
+  <g transform="translate(540, 560)">
+    <text x="0" y="0" class="mono-sm" fill="#22D3EE">RETRIEVAL &amp; NLP</text>
+    <text x="0" y="35" class="h3">ResearchMind AI</text>
+    <text x="0" y="65" class="p" font-size="14">AI-powered research assistant built using</text>
+    <text x="0" y="85" class="p" font-size="14">Retrieval-Augmented Generation over PDFs.</text>
+    <rect x="0" y="110" width="390" height="1" fill="rgba(255,255,255,0.08)"/>
+    <text x="0" y="140" class="mono-sm">STACK</text>
+    <text x="0" y="165" class="p-mut" font-size="13">LangChain, Vector DB, Semantic Embeddings</text>
+    <text x="0" y="200" class="mono-sm">ARCHITECTURE</text>
+    <text x="0" y="225" class="p-mut" font-size="13">Chunked indexing, semantic search, grounded Q&amp;A</text>
+  </g>
+  
+  <!-- Project 4: TrafficMind -->
+  <rect x="40" y="820" width="920" height="200" class="glass-card"/>
+  <g transform="translate(80, 870)">
+    <text x="0" y="0" class="mono-sm" fill="#22D3EE">SCIENTIFIC MACHINE LEARNING &amp; RL</text>
+    <text x="0" y="35" class="h3">TrafficMind AI — Smart City Platform</text>
+    <text x="0" y="65" class="p" font-size="14">Predicting traffic flow and optimizing signal control by combining Deep Reinforcement</text>
+    <text x="0" y="85" class="p" font-size="14">Learning, Physics-Informed Neural Networks, and SUMO Traffic Simulation.</text>
+    
+    <rect x="0" y="125" width="84" height="24" class="pill"/>
+    <text x="42" y="141" class="pill-text" text-anchor="middle">Deep RL</text>
+    <rect x="94" y="125" width="70" height="24" class="pill"/>
+    <text x="129" y="141" class="pill-text" text-anchor="middle">PINNs</text>
+    <rect x="174" y="125" width="60" height="24" class="pill"/>
+    <text x="204" y="141" class="pill-text" text-anchor="middle">SUMO</text>
+    <rect x="244" y="125" width="190" height="24" class="pill"/>
+    <text x="339" y="141" class="pill-text" text-anchor="middle">Ant Colony Optimization</text>
+  </g>
+
+</svg>

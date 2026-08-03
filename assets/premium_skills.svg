@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      * { box-sizing: border-box; }
+      .font-display { font-family: 'Space Grotesk', sans-serif; }
+      .font-body { font-family: 'Inter', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      
+      @keyframes float1 { 0% { transform: translate(0, 0); } 50% { transform: translate(20px, -20px); } 100% { transform: translate(0, 0); } }
+      @keyframes float2 { 0% { transform: translate(0, 0); } 50% { transform: translate(-20px, 20px); } 100% { transform: translate(0, 0); } }
+      @keyframes float3 { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(15px, 15px) scale(1.05); } 100% { transform: translate(0, 0) scale(1); } }
+      
+      .aurora-1 { animation: float1 15s ease-in-out infinite; }
+      .aurora-2 { animation: float2 20s ease-in-out infinite; }
+      .aurora-3 { animation: float3 25s ease-in-out infinite; }
+      
+      .glass-card { fill: rgba(255,255,255,0.03); stroke: rgba(255,255,255,0.08); stroke-width: 1px; rx: 16px; }
+      .pill { fill: rgba(124, 58, 237, 0.1); stroke: rgba(124, 58, 237, 0.3); stroke-width: 1px; rx: 100px; }
+      .pill-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #22D3EE; font-weight: 500; }
+      
+      .h1 { font-family: 'Space Grotesk', sans-serif; font-size: 64px; font-weight: 700; fill: url(#textGrad); letter-spacing: -1px; }
+      .h2 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600; fill: #F8FAFC; }
+      .h3 { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #F8FAFC; }
+      .p { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; fill: #CBD5E1; line-height: 1.6; }
+      .p-mut { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400; fill: #94A3B8; }
+      .mono-sm { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #94A3B8; letter-spacing: 1px; }
+      
+      .node { fill: rgba(34, 211, 238, 0.8); }
+      .edge { stroke: rgba(124, 58, 237, 0.2); stroke-width: 1px; }
+    </style>
+    
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(124, 58, 237, 0.05)" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#050816"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- Auroras -->
+  <circle cx="10%" cy="20%" r="400" fill="url(#aurora1)" class="aurora-1" />
+  <circle cx="90%" cy="80%" r="500" fill="url(#aurora2)" class="aurora-2" />
+  <circle cx="50%" cy="50%" r="300" fill="url(#aurora3)" class="aurora-3" />
+
+  
+  <text x="40" y="60" class="mono-sm" fill="#22D3EE">03 // CAPABILITIES &amp; PRINCIPLES</text>
+  <text x="40" y="105" class="h2">Technology &amp; Philosophy</text>
+  
+  <rect x="40" y="140" width="450" height="400" class="glass-card"/>
+  <g transform="translate(80, 190)">
+    <text x="0" y="0" class="h3">Engineering Principles</text>
+    <text x="0" y="30" class="p-mut">Standards I apply to every system I build.</text>
+    
+    <g transform="translate(0, 60)">
+      <path d="M 0 10 L 15 25 L 0 40" fill="none" stroke="#7C3AED" stroke-width="2"/>
+      <text x="30" y="22" class="p" fill="#F8FAFC" font-weight="600">Clean Architecture &amp; SOLID</text>
+      <text x="30" y="42" class="p-mut" font-size="13">Domain logic isolated from infrastructure.</text>
+      
+      <path d="M 0 80 L 15 95 L 0 110" fill="none" stroke="#22D3EE" stroke-width="2"/>
+      <text x="30" y="92" class="p" fill="#F8FAFC" font-weight="600">Scalability &amp; Maintainability</text>
+      <text x="30" y="112" class="p-mut" font-size="13">Async-first design, built for future developers.</text>
+      
+      <path d="M 0 150 L 15 165 L 0 180" fill="none" stroke="#10B981" stroke-width="2"/>
+      <text x="30" y="162" class="p" fill="#F8FAFC" font-weight="600">Testing &amp; CI/CD</text>
+      <text x="30" y="182" class="p-mut" font-size="13">Automated pipelines and rigorous test coverage.</text>
+      
+      <path d="M 0 220 L 15 235 L 0 250" fill="none" stroke="#2563EB" stroke-width="2"/>
+      <text x="30" y="232" class="p" fill="#F8FAFC" font-weight="600">Observability &amp; Docker</text>
+      <text x="30" y="252" class="p-mut" font-size="13">Reproducible environments with structured logging.</text>
+    </g>
+  </g>
+
+  <rect x="510" y="140" width="450" height="400" class="glass-card"/>
+  <g transform="translate(550, 190)">
+    <text x="0" y="0" class="h3">Technology Stack</text>
+    <text x="0" y="30" class="p-mut">Tools I use in research and production.</text>
+    
+    <g transform="translate(0, 60)">
+      <text x="0" y="15" class="mono-sm" fill="#7C3AED">AI / ML</text>
+      <text x="0" y="40" class="p">PyTorch, TensorFlow, Scikit-learn, LangChain</text>
+      <text x="0" y="60" class="p">Transformers, OpenCV, NumPy, Pandas</text>
+      <rect x="0" y="80" width="370" height="1" fill="rgba(255,255,255,0.08)"/>
+      
+      <text x="0" y="115" class="mono-sm" fill="#7C3AED">BACKEND</text>
+      <text x="0" y="140" class="p">FastAPI, Python, SQLAlchemy, Alembic</text>
+      <text x="0" y="160" class="p">Redis, Celery</text>
+      <rect x="0" y="180" width="370" height="1" fill="rgba(255,255,255,0.08)"/>
+      
+      <text x="0" y="215" class="mono-sm" fill="#7C3AED">INFRA &amp; DATA</text>
+      <text x="0" y="240" class="p">Docker, GitHub Actions, CI/CD, AWS</text>
+      <text x="0" y="260" class="p">PostgreSQL, SQLite, Vector Databases</text>
+    </g>
+  </g>
+
+</svg>

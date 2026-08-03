@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" width="100%" alt="Devadn11206 - AI Engineer & Researcher" />
+  <img src="assets/premium_hero.svg" width="100%" alt="Hero" />
 </div>
 
 <div align="center">
@@ -9,38 +9,15 @@
 </div>
 
 <div align="center">
-  <img src="assets/about.svg" width="100%" alt="About Me" />
+  <img src="assets/premium_about.svg" width="100%" alt="About & Mission" />
 </div>
 
 <div align="center">
-  <h2 align="center">Current Focus</h2>
-  <img src="assets/focus.svg" width="100%" alt="Current Focus" />
+  <img src="assets/premium_projects.svg" width="100%" alt="Featured Projects" />
 </div>
 
 <div align="center">
-  <h2 align="center">Engineering Philosophy</h2>
-  <img src="assets/philosophy.svg" width="100%" alt="Engineering Philosophy" />
-</div>
-
-<h2 align="center">Featured Projects</h2>
-<div align="center">
-  <a href="https://github.com/Devadn11206/Benefits-Bureaucracy-Navigator"><img src="assets/project_1.svg" width="49%" /></a>
-  <a href="https://github.com/Devadn11206/DreamScape-AI"><img src="assets/project_2.svg" width="49%" /></a>
-  <br>
-  <a href="https://github.com/Devadn11206/ResearchMind-AI"><img src="assets/project_3.svg" width="49%" /></a>
-  <a href="https://github.com/Devadn11206/TrafficMind-AI"><img src="assets/project_4.svg" width="49%" /></a>
-</div>
-
-<div align="center">
-  <img src="assets/exp_edu.svg" width="100%" alt="Experience and Education" />
-</div>
-
-<div align="center">
-  <img src="assets/architecture.svg" width="100%" alt="Architecture" />
-</div>
-
-<div align="center">
-  <img src="assets/tech_stack.svg" width="100%" alt="Tech Stack" />
+  <img src="assets/premium_skills.svg" width="100%" alt="Skills & Philosophy" />
 </div>
 
 <h2 align="center">Analytics & Activity</h2>
@@ -58,8 +35,5 @@
 </div>
 
 <div align="center">
-  <a href="https://linkedin.com/in/Devadn11206"><img src="assets/contact_linkedin.svg" width="24%" /></a>
-  <a href="mailto:contact@example.com"><img src="assets/contact_email.svg" width="24%" /></a>
-  <a href="https://github.com/Devadn11206"><img src="assets/contact_portfolio.svg" width="24%" /></a>
-  <a href="https://scholar.google.com/"><img src="assets/contact_scholar.svg" width="24%" /></a>
+  <img src="assets/premium_footer.svg" width="100%" alt="Contact" />
 </div>
