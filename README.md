@@ -423,13 +423,11 @@ Application and frontend development utilizing React, Vite, and Tailwind CSS.
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Devadn11206&theme=tokyonight" alt="Contribution Activity" />
 </div>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Devadn11206/Devadn11206/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Devadn11206/Devadn11206/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Devadn11206/Devadn11206/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
+## 🏎️ Contribution Drive
+
+<p align="center">
+  <img src="./assets/f1-contribution.svg" width="900" alt="GitHub Contribution F1 Visualization">
+</p>
 
 ---
 
