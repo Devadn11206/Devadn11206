@@ -35,14 +35,9 @@
 ---
 
 
-<!-- Animated ASCII Identity -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./ascii_project/assets/devanandu-ascii.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./ascii_project/assets/devanandu-ascii-static.svg">
-    <img alt="Animated ASCII Identity" src="./ascii_project/assets/devanandu-ascii.svg" width="500">
-  </picture>
-</div>
+<p align="center">
+  <img src="./assets/f1-ai-animation.svg" width="900" alt="AI and Motorsport Animation">
+</p>
 
 
 ## 👨‍💻 About Me
